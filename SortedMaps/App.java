@@ -3,6 +3,12 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.TreeMap;
 
+/**
+* HashMap -> No sotring
+* LinkedHashMap -> Sorted in the order of items being added
+* TreeMap -> Sorted in natural order (sorted by the keys)
+**/
+
 public class App {
 
     public static void main(String[] args) {
