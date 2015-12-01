@@ -2,6 +2,19 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.TreeSet;
 
+/**
+Set is empty at start
+
+bear
+cat
+dog
+mouse
+snake
+Contains cat
+
+
+**/
+
 public class App {
 
     public static void main(String[] args) {
@@ -32,7 +45,7 @@ public class App {
         // Adding duplicate items does nothing.
         set1.add("mouse");
 
-        System.out.println(set1);
+        System.out.println(set1); //[bear, cat, dog, mouse, snake]
 
         // ///////// Iteration ////////////////
 
@@ -65,14 +78,14 @@ public class App {
         
         intersection.retainAll(set2);
         
-        System.out.println(intersection);
+        System.out.println(intersection); //[cat, dog]
         
         ////////////// Difference /////////////////////////
         
         Set<String> difference = new HashSet<String>(set2);
         
         difference.removeAll(set1);
-        System.out.println(difference);
+        System.out.println(difference); //[giraffe, ant, monkey]
     }
 
 }
